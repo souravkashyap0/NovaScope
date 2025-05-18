@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from 'react-router' ;
 import Apod from '../src/components/apod/apod.tsx';
+import MarsRover from './components/mars-rover/mars-rover.tsx';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path : "/apod",
     element : <Apod />
+  },
+  {
+    path : "/mars-rover",
+    element : <MarsRover />
   }
 ])
 

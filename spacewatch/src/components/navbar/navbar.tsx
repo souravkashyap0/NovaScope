@@ -13,6 +13,8 @@ export  default function Navbar(){
         <AppBar position = "static" color = "primary">
             <Container maxWidth ="xl">
                 <StyledButton variant='contained' onClick={()=> navigate('/apod')}>APOD </StyledButton>
+                <StyledButton variant='contained' onClick={()=> navigate('/mars-rover')}>MARS ROVER </StyledButton>
+
             </Container>
         </AppBar>
     )
