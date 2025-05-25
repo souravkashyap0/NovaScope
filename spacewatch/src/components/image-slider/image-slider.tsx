@@ -57,7 +57,6 @@ export default function ImageSlider (marsRoverImageDetails : ImageSliderProps){
         <p>ROVER NAME : {currentImage?.rover_details.name}</p>
         <p>EARTH DATE : {currentImage?.earth_date}</p>
         <p>CAMERA NAME : {currentImage?.camera?.full_name}</p>
-        
       </Box>
       </>
        

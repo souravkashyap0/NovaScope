@@ -24,11 +24,12 @@ export default function Apod (){
     }
     fetchApodDetails();
    },[]);
+   
    console.log('apodData',apodData);
     return (
         <div>
             <h1>Astronomical Picture of the Day</h1>
-            {/* <img src={apodData.} */}
+            <img src={apodData.url}/>
             <h4>{apodData.title}</h4>
         </div>
     )
