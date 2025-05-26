@@ -1,5 +1,6 @@
 import.meta.env.VITE_NASA_API_KEY;
 import  {useState,useEffect} from 'react';
+import  {styled , Card ,CardMedia} from '@mui/material';
 
 interface IApod {
     date : string;
@@ -10,6 +11,11 @@ interface IApod {
     url : string;
 }
 
+const StyledImageContainer =  styled('img')`
+width : 100%;
+height : 500px;
+object-fit : cover;
+`
 
 export default function Apod (){
    console.log(import.meta.env.VITE_NASA_API_KEY);
@@ -27,11 +33,12 @@ export default function Apod (){
    
    console.log('apodData',apodData);
     return (
-        <div>
+        <Card>
             <h1>Astronomical Picture of the Day</h1>
-            <img src={apodData.url}/>
+            <CardMedia sx={{height:300,width : 500}} image={apodData.url}/> 
+            {/* <StyledImageContainer src={apodData.url}/> */}
             <h4>{apodData.title}</h4>
-        </div>
+        </Card>
     )
 }
 

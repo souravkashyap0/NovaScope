@@ -4,6 +4,7 @@ import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from 'react-router' ;
 import Apod from '../src/components/apod/apod.tsx';
 import MarsRover from './components/mars-rover/mars-rover.tsx';
+import NotFound  from './components/not-found/not-found.tsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path : "/mars-rover",
     element : <MarsRover />
+  },
+  {
+    path : "*",
+    element : <NotFound />
   }
 ])
 

@@ -2,8 +2,9 @@ import {AppBar, Button, Container, styled } from '@mui/material';
 import {useNavigate} from  'react-router';
 
 const StyledButton = styled(Button)`
-textColor : 'black';
-backgroundColor : 'green';
+textColor : 'blue';
+color: 'yellow';
+backgroundColor : 'yellow';
 border : '1px solid green';
 `;
 
